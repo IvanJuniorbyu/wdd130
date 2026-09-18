@@ -1,0 +1,81 @@
+:root {
+    --cor-primaria: rgb(67, 144, 67);
+    --cor-secundaria: rgb(255, 240, 181);
+    --cor-destaque1: rgb(63, 63, 120);
+    --cor-destaque2: rgb(218, 218, 61);
+    --fonte-de-titulo: " Times New Romam", "Georgia", serif;
+    --fonte-body: arial, helvetica, sans serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--fonte-body);
+    color: var(--cor-destaque1);
+}
+
+header,
+main,
+footer {
+    width: 840px;
+    height: auto;
+}
+
+h1,
+h2 {
+    font-family: var(--fonte-de-titulo);
+    color: var(--cor-primaria);
+    text-align: center;
+}
+
+nav,
+p,
+section,
+article {
+    margin: 16px;
+    padding: 8px;
+}
+
+.redes-sociais a {
+    text-decoration: none;
+}
+
+.hero {
+    position: relative;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+h1 {
+    position: absolute;
+    top: 5%;
+    width: 100%;
+    padding: 16px;
+    text-align: center;
+    opacity: 0.7;
+    background-color: var(--cor-destaque1);
+    color: white;
+}
+
+article {
+    position: absolute;
+    bottom: -5%;
+    border: 5px color blue;
+    background-color: var(--cor-secundaria);
+    box-sizing: 0 10px;
+
+}
+
+.hero article img {
+    float: right;
+    width: 125px;
+    margin: 15px;
+}
