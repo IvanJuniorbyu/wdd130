@@ -40,7 +40,9 @@ article {
     padding: 8px;
 }
 
-.redes-sociais a {
+.redes-sociais a,
+nav a,
+footer a {
     text-decoration: none;
 }
 
