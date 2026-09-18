@@ -3,8 +3,8 @@
     --cor-secundaria: rgb(255, 240, 181);
     --cor-destaque1: rgb(63, 63, 120);
     --cor-destaque2: rgb(218, 218, 61);
-    --fonte-de-titulo: " Times New Romam", "Georgia", serif;
-    --fonte-body: arial, helvetica, sans serif;
+    --fonte-de-titulo: "Times New Roman", "Georgia", serif;
+    --fonte-body: arial, helvetica, sans-serif;
 }
 
 * {
@@ -68,14 +68,22 @@ h1 {
 article {
     position: absolute;
     bottom: -5%;
-    border: 5px color blue;
+    border: 5px solid blue;
     background-color: var(--cor-secundaria);
-    box-sizing: 0 10px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+}
 
+.hero h1,
+.hero article {
+    position: absolute;
 }
 
 .hero article img {
     float: right;
     width: 125px;
     margin: 15px;
+}
+
+footer {
+    background-color: var(--cor-destaque2);
 }
