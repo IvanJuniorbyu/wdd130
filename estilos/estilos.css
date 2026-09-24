@@ -29,6 +29,7 @@ nav a {
 
 h1 {
     color: var(--cor-de-fundo-do-titulo);
+    border-bottom: 2px solid steelblue;
 }
 
 img {
@@ -43,6 +44,11 @@ p {
     padding: 0px;
 }
 
+main {
+    grid-column: 2 / 3;
+    margin: 1rem;
+}
+
 main img {
     width: 150px;
     height: auto;
@@ -54,9 +60,9 @@ main img {
 
 aside {
     width: 20rem;
-    color: #333;
-    text-align: var(--alinhamento-do-texto);
     position: relative;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
 }
 
 aside img {
@@ -90,7 +96,13 @@ footer {
 }
 
 header,
-footer {
-    max-width: 800px;
-    margin: auto;
+footer,
+.grid {
+    display: grid;
+    align-items: center;
+}
+
+.grid {
+    display: grid;
+    align-items: center;
 }
