@@ -18,6 +18,16 @@ body {
     color: var(--cor-destaque1);
 }
 
+header {
+    display: grid;
+    grid-template-columns: 120px 1fr;
+}
+
+header img {
+    max-width: 100%;
+    height: auto;
+}
+
 header,
 main,
 footer {
@@ -32,6 +42,11 @@ h2 {
     text-align: center;
 }
 
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
 nav,
 p,
 section,
@@ -40,10 +55,34 @@ article {
     padding: 8px;
 }
 
+.historia {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.historia img {
+    max-width: 100%;
+    height: auto;
+}
+
+.historia h2 {
+    grid-column: 1 / -1;
+}
+
+.redes-sociais {
+    justify-content: end;
+}
+
 .redes-sociais a,
 nav a,
 footer a {
     text-decoration: none;
+}
+
+.redes-sociais img {
+    width: 40px;
+    height: auto;
+
 }
 
 .hero {
@@ -86,6 +125,25 @@ article {
     margin: 15px;
 }
 
+.aventura {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    column-gap: 1.5rem;
+}
+
+.aventura h2 {
+    grid-column: 1 / -1;
+}
+
+.aventura img {
+    max-width: 100%;
+    height: auto;
+    display: grid;
+
+}
+
 footer {
     background-color: var(--cor-destaque2);
+    display: flex;
+    justify-content: space-between;
 }
