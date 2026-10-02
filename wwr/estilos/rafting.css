@@ -114,7 +114,10 @@ article {
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
 }
 
-.hero h1,
+.hero h1 {
+    position: absolute;
+}
+
 .hero article {
     position: absolute;
 }
