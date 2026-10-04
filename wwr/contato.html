@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-      content="Página de rafting para guerreiros que gostam de explorar e se desafiar na natureza, além de apreciar lindas paisagens naturais.">
+      content="Entre em contato com a Rafting Adventure para tirar dúvidas, fazer perguntas sobre reservas ou enviar sugestões sobre nosso site.">
     <meta name="author" content="Ivan Rodrigues Silva junior.">
-    <title>Sobre Nós - Rafting Adventure</title>
+    <title>Fale Conosco - Rafting Adventure</title>
     <link rel="stylesheet" href="estilos/rafting.css">
 </head>
 
@@ -25,7 +25,7 @@
         <section class="contatos">
             <h1>Companhia de Rafting em Corredeiras</h1>
             <p>123 Rua Principal do Rio</p>
-            <p>Foz do Iguaçu, Parana</p>
+            <p>Foz do Iguaçu, Paraná</p>
             <p>+55 45 99999-9999</p>
             <p>info@correiras.com</p>
         </section>
@@ -44,17 +44,18 @@
 
                     <div class="radio">
                         <div class="opcao">
-                            <input type="radio" id="consulta" name="pergunta">
+                            <input type="radio" id="consulta" name="pergunta" value="consulta"
+                              required>
                             <label for="consulta">Consulta Geral</label>
                         </div>
 
                         <div class="opcao">
-                            <input type="radio" id="reserva" name="pergunta">
+                            <input type="radio" id="reserva" name="pergunta" value="reserva">
                             <label for="reserva">Pergunta sobre Reserva</label>
                         </div>
 
                         <div class="opcao">
-                            <input type="radio" id="sugestao" name="pergunta">
+                            <input type="radio" id="sugestao" name="pergunta" value="sugestao">
                             <label for="sugestao">Sugestão de Site</label>
                         </div>
                     </div>
@@ -63,22 +64,24 @@
                     <textarea name="mensagem" id="mensagem" rows="4"
                       placeholder="Escreva aqui..."></textarea>
 
-                    <label for="newsletter">Quero receber newsletter mensal.</label>
-                    <input type="checkbox" id="newsletter" name="newsletter">
+                    <div class="newsletter"><input type="checkbox" id="newsletter"
+                          name="newsletter"><label for="newsletter">Quero receber a newsletter
+                            mensal</label></div>
 
-                    <button type="submit">Entrar em Contato!</button>
+                    <button type="submit">Enviar Mensagem</button>
                 </div>
             </form>
         </section>
         <section class="equipe">
             <h2>Estamos Aqui para Servi-lo</h2>
-            <figure><img src="imagens/Joao-Paulo.jpg" alt="funcionario-1">
-                <figcaption>Joao Paulo - Atendimento ao Cliente</figcaption>
+            <figure><img src="imagens/Joao-Paulo.jpg"
+                  alt="Joao Paulo, funcionário de atendimento ao cliente">
+                <figcaption>João Paulo - Atendimento ao Cliente</figcaption>
             </figure>
-            <figure><img src="imagens/Ivani-Torres.jpg" alt="funcionario-2">
+            <figure><img src="imagens/Ivani-Torres.jpg" alt="Ivani Torres, instrutora de segurança">
                 <figcaption>Ivani Torres - Instrutora de Segurança</figcaption>
             </figure>
-            <figure><img src="imagens/Ana-Paula.jpg" alt="funcionario-3">
+            <figure><img src="imagens/Ana-Paula.jpg" alt="Ana Paula, guia de rafting">
                 <figcaption>Ana Paula - Guia de Rafting</figcaption>
             </figure>
         </section>

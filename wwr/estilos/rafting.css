@@ -32,7 +32,9 @@ header,
 main,
 footer {
     width: 840px;
+    max-width: 100%;
     height: auto;
+    margin: 0 auto;
 }
 
 h1,
@@ -104,7 +106,7 @@ h1 {
 article {
     position: absolute;
     bottom: -5%;
-    border: 5px solid blue;
+    border: 5px solid var(--cor-primaria);
     background-color: var(--cor-secundaria);
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
 }
@@ -153,6 +155,8 @@ article {
 
 .mapa iframe {
     width: 100%;
+    height: 350px;
+    border: none;
 }
 
 .local form {
@@ -163,6 +167,7 @@ article {
 .form {
     display: flex;
     flex-direction: column;
+    gap: 10px;
 }
 
 .radio {
@@ -172,12 +177,23 @@ article {
 
 .opcao {
     display: flex;
+    align-items: center;
+    gap: 8px;
 }
 
 .equipe {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 1.5rem;
+}
+
+.equipe figure {
+    text-align: center;
+}
+
+.equipe figcaption {
+    margin-top: 8px;
+    font-weight: bold;
 }
 
 .equipe h2 {
@@ -193,4 +209,36 @@ footer {
     background-color: var(--cor-destaque2);
     display: flex;
     justify-content: space-between;
+}
+
+.newsletter {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+button {
+    padding: 12px;
+    background-color: var(--cor-primaria);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+button:hover {
+    background-color: var(--cor-destaque1);
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    padding: 10px;
+    border: 1px solid #777;
+    border-radius: 4px;
+}
+
+textarea {
+    resize: vertical;
 }
