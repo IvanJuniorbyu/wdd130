@@ -71,17 +71,17 @@ article {
     grid-column: 1 / -1;
 }
 
-.socialmedia {
+.redes-sociais {
     justify-content: end;
 }
 
-.socialmedia a,
+.redes-sociais a,
 nav a,
 footer a {
     text-decoration: none;
 }
 
-.socialmedia img {
+.redes-sociais img {
     width: 40px;
     height: auto;
 
