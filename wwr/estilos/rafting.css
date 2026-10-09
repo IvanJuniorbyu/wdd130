@@ -1,8 +1,8 @@
 :root {
     --cor-primaria: rgb(11, 61, 46);
-    --cor-secundaria: rgb(255, 240, 181);
-    --cor-destaque1: rgb(63, 63, 120);
-    --cor-destaque2: rgb(218, 218, 61);
+    --cor-secundaria: rgb(167, 234, 243);
+    --cor-destaque1: rgb(30, 30, 49);
+    --cor-destaque2: rgb(94, 178, 107);
     --fonte-de-titulo: "Times New Roman", "Georgia", serif;
     --fonte-body: arial, helvetica, sans-serif;
 }
@@ -47,6 +47,13 @@ h2 {
 nav {
     display: flex;
     justify-content: space-between;
+}
+
+a {
+    font-size: x-large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    color: var(--cor-destaque1);
 }
 
 nav,
@@ -110,9 +117,15 @@ h1 {
 article {
     position: absolute;
     bottom: -5%;
-    border: 5px solid var(--cor-primaria);
+    border: 2px solid var(--cor-primaria);
     background-color: var(--cor-secundaria);
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+article p {
+    text-align: justify;
+    margin: 8px;
+    margin-top: 20px;
 }
 
 .hero h1 {
@@ -229,7 +242,7 @@ footer {
 
 button {
     padding: 12px;
-    background-color: var(--cor-primaria);
+    background-color: var(--cor-destaque2);
     color: white;
     border: none;
     border-radius: 5px;
@@ -238,7 +251,7 @@ button {
 }
 
 button:hover {
-    background-color: var(--cor-destaque1);
+    background-color: var(--cor-primaria);
 }
 
 input[type="text"],
@@ -251,4 +264,11 @@ textarea {
 
 textarea {
     resize: vertical;
+}
+
+.contatos {
+    font-size: x-large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    color: var(--cor-destaque1);
 }
