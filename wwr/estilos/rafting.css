@@ -109,8 +109,6 @@ h1 {
 }
 
 article {
-    position: absolute;
-    bottom: -10%;
     border: 2px solid var(--cor-primaria);
     background-color: var(--cor-secundaria);
     box-shadow: 0 10px 10px var(--cor-destaque1);
@@ -171,9 +169,7 @@ article p {
     border: none;
 }
 
-/*=======================================
-             FORMULÁRIO
-=========================================*/
+/*FORMULÁRIO*/
 
 .local form {
     flex: 1;
@@ -230,9 +226,7 @@ textarea {
     resize: vertical;
 }
 
-/*============================================
-                EQUIPE
-==============================================*/
+/*EQUIPE*/
 
 .equipe {
     display: grid;
@@ -249,9 +243,7 @@ textarea {
     height: auto;
 }
 
-/*============================================
-                   RODAPÉ
-==============================================*/
+/*RODAPÉ=*/
 
 footer {
     background-color: var(--cor-destaque2);
