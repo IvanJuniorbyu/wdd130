@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+      content="Conheça os passeios de rafting da Rafting Adventure, compare as opções de aventura e entre em contato para planejar sua próxima experiência.">
+    <meta name="author" content="Ivan Rodrigues Silva Junior">
+    <title>Nossos Passeios | Rafting Adventure</title>
+    <link rel="stylesheet" href="estilos/rafting.css">
+</head>
+
+<body>
+    <header>
+        <a class="logo" href="index.html">
+            <img src="imagens/logo.webp" alt="Logotipo da Rafting Adventure">
+        </a>
+
+        <nav aria-label="Navegação principal">
+            <a href="index.html">Página Inicial</a>
+            <a href="sobre.html">Sobre Nós</a>
+            <a href="passeios.html" aria-current="page">Passeios</a>
+            <a href="contato.html">Fale Conosco</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" aria-labelledby="titulo-principal">
+            <img class="hero-imagem" src="imagens/hero-image.webp"
+              alt="Grupo praticando rafting nas corredeiras de um rio">
+
+            <h1 id="titulo-principal">Escolha sua próxima aventura!</h1>
+
+            <article class="hero-cartao">
+                <img src="imagens/funcionario-feliz.webp"
+                  alt="Integrante da equipe da Rafting Adventure">
+
+                <div class="hero-conteudo">
+                    <p>
+                        Prepare-se para viver momentos inesquecíveis em contato
+                        com a natureza! Temos opções para quem quer experimentar
+                        o rafting pela primeira vez e para quem procura mais
+                        emoção nas corredeiras. Conheça nossos passeios e escolha
+                        a aventura ideal para você.
+                    </p>
+
+                    <a class="botao-link" href="#opcoes-passeios">
+                        Explorar passeios
+                    </a>
+                </div>
+            </article>
+        </section>
+
+        <section class="introducao-passeios" aria-labelledby="titulo-opcoes">
+            <h2 id="titulo-opcoes">Encontre seu próximo desafio</h2>
+
+            <p>
+                Cada passeio oferece uma maneira diferente de aproveitar o rio.
+                Confira as opções, conheça os níveis de dificuldade e escolha
+                aquela que combina melhor com sua experiência e disposição
+                para a aventura.
+            </p>
+        </section>
+
+        <section class="lista-passeios" id="opcoes-passeios" aria-labelledby="titulo-passeios">
+            <h2 id="titulo-passeios">Nossos passeios</h2>
+
+            <article class="passeio-card">
+                <img src="imagens/passeio-1.jpg"
+                  alt="Passeio de rafting em um trecho de rio cercado pela natureza">
+
+                <div class="passeio-conteudo">
+                    <h3>Aventura nas Águas Tranquilas</h3>
+
+                    <p>
+                        Uma opção para quem deseja conhecer o rafting e
+                        aproveitar a paisagem natural. A proposta é vivenciar
+                        a experiência em um percurso mais tranquilo, sempre
+                        com orientação da equipe.
+                    </p>
+
+                    <ul>
+                        <li><strong>Duração:</strong> aproximadamente 1h30</li>
+                        <li><strong>Dificuldade:</strong> iniciante</li>
+                        <li><strong>Indicado para:</strong> quem está começando</li>
+                    </ul>
+
+                    <a class="botao-link" href="contato.html">
+                        Consultar este passeio
+                    </a>
+                </div>
+            </article>
+
+            <article class="passeio-card">
+                <img src="imagens/passeio-2.jpg"
+                  alt="Rafting em corredeiras com participantes remando em equipe">
+
+                <div class="passeio-conteudo">
+                    <h3>Desafio das Corredeiras</h3>
+
+                    <p>
+                        Para quem busca mais movimento e emoção, este passeio
+                        propõe uma descida com corredeiras e trabalho em equipe.
+                        Prepare-se para remar, seguir as orientações do guia e
+                        aproveitar cada etapa do percurso.
+                    </p>
+
+                    <ul>
+                        <li><strong>Duração:</strong> aproximadamente 2h30</li>
+                        <li><strong>Dificuldade:</strong> intermediário</li>
+                        <li><strong>Indicado para:</strong> quem busca mais emoção</li>
+                    </ul>
+
+                    <a class="botao-link" href="contato.html">
+                        Consultar este passeio
+                    </a>
+                </div>
+            </article>
+
+            <article class="passeio-card">
+                <img src="imagens/passeio-3.jpg"
+                  alt="Aventura de rafting em um rio cercado por montanhas">
+
+                <div class="passeio-conteudo">
+                    <h3>Expedição Radical</h3>
+
+                    <p>
+                        Uma proposta para participantes experientes que procuram
+                        uma aventura mais intensa. O percurso exige atenção,
+                        cooperação e respeito às orientações de segurança.
+                    </p>
+
+                    <ul>
+                        <li><strong>Duração:</strong> aproximadamente 4 horas</li>
+                        <li><strong>Dificuldade:</strong> avançado</li>
+                        <li><strong>Indicado para:</strong> participantes experientes</li>
+                    </ul>
+
+                    <a class="botao-link" href="contato.html">
+                        Consultar este passeio
+                    </a>
+                </div>
+            </article>
+        </section>
+
+        <section class="comparacao-passeios" aria-labelledby="titulo-comparacao">
+            <h2 id="titulo-comparacao">Compare os passeios</h2>
+
+            <p>
+                Use esta tabela para visualizar as principais diferenças
+                entre as opções disponíveis.
+            </p>
+
+            <div class="tabela-responsiva">
+                <table class="tabela-passeios">
+                    <thead>
+                        <tr>
+                            <th scope="col">Passeio</th>
+                            <th scope="col">Duração</th>
+                            <th scope="col">Dificuldade</th>
+                            <th scope="col">Perfil recomendado</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <th scope="row">Águas Tranquilas</th>
+                            <td>1h30</td>
+                            <td>Iniciante</td>
+                            <td>Primeira experiência</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">Desafio das Corredeiras</th>
+                            <td>2h30</td>
+                            <td>Intermediário</td>
+                            <td>Quem busca mais emoção</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">Expedição Radical</th>
+                            <td>4 horas</td>
+                            <td>Avançado</td>
+                            <td>Participantes experientes</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <p class="observacao-passeios">
+                As durações e os níveis apresentados são ilustrativos.
+                Confirme as condições, os requisitos e a disponibilidade
+                do passeio antes de realizar uma reserva.
+            </p>
+        </section>
+
+        <section class="chamada-reserva" aria-labelledby="titulo-reserva">
+            <h2 id="titulo-reserva">Sua próxima aventura começa aqui!</h2>
+
+            <p>
+                Ficou interessado em algum passeio? Entre em contato com nossa
+                equipe para tirar dúvidas e conversar sobre as opções.
+            </p>
+
+            <a class="botao-link" href="contato.html">
+                Fale conosco
+            </a>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 - Rafting Adventure - Ivan Rodrigues Silva Junior</p>
+
+        <nav class="redes-sociais" aria-label="Redes sociais">
+            <a href="https://www.facebook.com/ivodrigues/" aria-label="Facebook">
+                <img src="imagens/icone-facebook.svg" alt="">
+            </a>
+
+            <a href="https://www.instagram.com/ivanjunior.048/" aria-label="Instagram">
+                <img src="imagens/icone-instagram.svg" alt="">
+            </a>
+
+            <a href="https://www.linkedin.com/in/ivan-rodrigues-silva-junior" aria-label="LinkedIn">
+                <img src="imagens/icone-linkedin.svg" alt="">
+            </a>
+        </nav>
+    </footer>
+</body>
+
+</html>

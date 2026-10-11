@@ -5,97 +5,156 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-      content="Página principal Rafting adventure, passeios de rafting, aventura e segurança.">
-    <link rel="stylesheet" href="estilos/rafting.css">
+      content="Conheça a Rafting Adventure: passeios de rafting, aventura nas corredeiras, segurança e experiências inesquecíveis em meio à natureza.">
+    <meta name="author" content="Ivan Rodrigues Silva Junior">
     <title>Página Inicial | Rafting Adventure</title>
+    <link rel="stylesheet" href="estilos/rafting.css">
 </head>
 
 <body>
     <header>
-        <img src="imagens/logo.webp" alt="Logotipo da Rafting Adventure">
-        <nav>
-            <a href="index.html">Página Inicial</a>
+        <a class="logo" href="index.html">
+            <img src="imagens/logo.webp" alt="Logotipo da Rafting Adventure">
+        </a>
+
+        <nav aria-label="Navegação principal">
+            <a href="index.html" aria-current="page">Página Inicial</a>
             <a href="sobre.html">Sobre Nós</a>
             <a href="passeios.html">Passeios</a>
             <a href="contato.html">Fale Conosco</a>
         </nav>
     </header>
-    <div class="hero">
-        <img src="imagens/hero-image.webp" alt="Grupo praticando rafting nas corredeiras de um rio">
-        <h1>Venha viver sua próxima aventura!</h1>
-        <p>Bem-vindo ao Rafting Adventure! Aqui você encontra informações sobre nossa história,
-            nossas
-            aventuras nas corredeiras e tudo o que precisa para planejar sua próxima descida.
-            Conheça nossa
-            equipe, veja fotos dos passeios e entre em contato para reservar a sua emoção em meio à
-            natureza.</p>
-        <a href="passeios.html">Conheça nossos passeios!</a>
-    </div>
 
-    <section class="destaques">
-        <h2>Por que escolher a Rafting Adventure?</h2>
+    <main>
+        <section class="hero" aria-labelledby="titulo-principal">
+            <img class="hero-imagem" src="imagens/hero-image.webp"
+              alt="Grupo praticando rafting nas corredeiras de um rio">
 
-        <article>
-            <h3>Nossa missão</h3>
+            <h1 id="titulo-principal">Venha viver sua próxima aventura!</h1>
+
+            <article class="hero-cartao">
+                <img src="imagens/funcionario-feliz.webp"
+                  alt="Integrante da equipe da Rafting Adventure">
+
+                <div class="hero-conteudo">
+                    <p>
+                        Bem-vindo à Rafting Adventure! Aqui você encontra informações
+                        sobre nossa história, nossas aventuras nas corredeiras e tudo
+                        o que precisa para planejar sua próxima descida. Conheça nossa
+                        equipe, veja fotos dos passeios e entre em contato para
+                        reservar sua próxima aventura em meio à natureza.
+                    </p>
+
+                    <a class="botao-link" href="passeios.html">
+                        Conheça nossos passeios
+                    </a>
+                </div>
+            </article>
+        </section>
+
+        <section class="historia" aria-labelledby="titulo-historia">
+            <h2 id="titulo-historia">Nossa história</h2>
+
             <p>
-                Queremos transformar o seu dia no rio em uma memória que você vai guardar para
-                sempre. Nós cuidamos
-                da segurança, do equipamento e de cada detalhe do passeio, para que você possa se
-                entregar à
-                aventura sem preocupação. Acreditamos que a natureza une as pessoas, por isso
-                recebemos cada
-                visitante como parte da nossa família, seja você um iniciante curioso ou um remador
-                experiente. E
-                fazemos tudo isso respeitando o rio, porque ele é o coração da nossa história e
-                queremos que
-                continue sendo para as próximas gerações.
+                Fundada nas montanhas americanas, a Rafting Adventure nasceu da
+                paixão por aventura, rios e natureza. Desde o início, nosso objetivo
+                é proporcionar experiências emocionantes, seguras e inesquecíveis
+                para nossos clientes.
             </p>
-            <img src="imagens/instrucoes-antes-do-passeio.jpg"
-              alt="instrutor ajudando a se preparar enquanto orienta">
-        </article>
 
-        <article>
-            <h3>Nossas aventuras</h3>
+            <img src="imagens/historia.jpg"
+              alt="Remos coloridos utilizados nas aventuras de rafting">
+
             <p>
-                Você escolhe o tamanho da emoção, e a gente garante que ela seja inesquecível. Em
-                cada passeio, você
-                recebe todo o equipamento, uma orientação rápida e um guia experiente que fica ao
-                seu lado em cada
-                curva do rio. Depois é só remar com o seu grupo, sentir a água batendo no barco, rir
-                nas corredeiras
-                e fazer pausas para admirar a paisagem. Para quem nunca remou na vida, temos
-                descidas mais
-                tranquilas. Para quem quer mais adrenalina, temos trechos com corredeiras bem mais
-                intensas. No fim
-                do dia, você volta cansado, molhado e com um sorriso que não sai do rosto. Está
-                pronto para a sua
-                primeira descida? Reserve agora e venha viver essa aventura com a gente!
+                Com guias experientes e equipamentos adequados, nossa equipe conduz
+                grupos por diferentes trechos dos rios, valorizando a segurança,
+                a diversão e o respeito ao meio ambiente em cada aventura.
             </p>
-            <img src="imagens/corredeiras.jpg" alt="familia se divertindo nas corredeiras">
-        </article>
-    </section>
-    <section class="inscricao-newsletter">
-        <h2>Receba nossas novidades!</h2>
-        <form>
-            <div class="form">
-                <label for="nome">Nome:</label>
-                <input type="text" id="nome" name="nome" required>
-                <label for="email">E-mail:</label>
-                <input type="email" id="email" name="email" required>
+        </section>
+
+        <section class="destaques" aria-labelledby="titulo-destaques">
+            <h2 id="titulo-destaques">
+                Por que escolher a Rafting Adventure?
+            </h2>
+
+            <article class="destaque-cartao">
+                <h3>Nossa missão</h3>
+
+                <p>
+                    Queremos transformar seu dia no rio em uma memória especial.
+                    Cuidamos da segurança, dos equipamentos e da orientação para
+                    que você possa aproveitar a aventura com mais tranquilidade.
+                    Acreditamos que a natureza une as pessoas e recebemos cada
+                    visitante com atenção, seja iniciante ou experiente. Também
+                    valorizamos o respeito ao rio e a preservação do ambiente
+                    para as próximas gerações.
+                </p>
+
+                <img src="imagens/instrucoes-antes-do-passeio.jpg"
+                  alt="Instrutor orientando os participantes antes do passeio">
+            </article>
+
+            <article class="destaque-cartao">
+                <h3>Nossas aventuras</h3>
+
+                <p>
+                    Temos opções para quem procura uma descida mais tranquila e
+                    para quem deseja sentir mais adrenalina nas corredeiras.
+                    Antes de cada passeio, os participantes recebem orientações
+                    e equipamentos adequados, além do acompanhamento de um guia.
+                    Durante o percurso, você poderá remar em grupo, aproveitar
+                    a paisagem e criar lembranças inesquecíveis. Escolha sua
+                    próxima aventura e venha conhecer nossos passeios!
+                </p>
+
+                <img src="imagens/corredeiras.jpg"
+                  alt="Participantes aproveitando a aventura nas corredeiras">
+            </article>
+        </section>
+
+        <section class="inscricao-newsletter" aria-labelledby="titulo-newsletter">
+            <h2 id="titulo-newsletter">Receba nossas novidades!</h2>
+
+            <p>
+                Cadastre seu nome e e-mail para demonstrar interesse em receber
+                novidades sobre nossos passeios.
+            </p>
+
+            <form class="form-newsletter" action="" method="get">
+                <div class="campo">
+                    <label for="nome-newsletter">Nome:</label>
+                    <input type="text" id="nome-newsletter" name="nome" autocomplete="name"
+                      required>
+                </div>
+
+                <div class="campo">
+                    <label for="email-newsletter">E-mail:</label>
+                    <input type="email" id="email-newsletter" name="email" autocomplete="email"
+                      required>
+                </div>
+
                 <button type="submit">Quero receber novidades</button>
-            </div>
-        </form>
-    </section>
-    <footer>
-        <p>©️ 2026 - Rafting Adventure - Ivan Rodrigues Silva Junior</p>
-        <nav class="redes-sociais">
-            <a href="https://www.facebook.com/ivodrigues/"><img src="imagens/icone-facebook.svg"
-                  alt="ícone facebook"></a>
-            <a href="https://www.instagram.com/ivanjunior.048/"><img
-                  src="imagens/icone-instagram.svg" alt="ícone instagram"></a>
-            <a href="https://www.linkedin.com/in/ivan-rodrigues-silva-junior"><img
-                  src="imagens/icone-linkedin.svg" alt="ícone linkedin"></a>
+            </form>
+        </section>
+    </main>
 
+    <footer>
+        <p>
+            © 2026 - Rafting Adventure - Ivan Rodrigues Silva Junior
+        </p>
+
+        <nav class="redes-sociais" aria-label="Redes sociais">
+            <a href="https://www.facebook.com/ivodrigues/" aria-label="Facebook">
+                <img src="imagens/icone-facebook.svg" alt="">
+            </a>
+
+            <a href="https://www.instagram.com/ivanjunior.048/" aria-label="Instagram">
+                <img src="imagens/icone-instagram.svg" alt="">
+            </a>
+
+            <a href="https://www.linkedin.com/in/ivan-rodrigues-silva-junior" aria-label="LinkedIn">
+                <img src="imagens/icone-linkedin.svg" alt="">
+            </a>
         </nav>
     </footer>
 </body>

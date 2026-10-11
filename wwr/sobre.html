@@ -5,83 +5,123 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-      content="Página de rafting para guerreiros que gostam de explorar e se desafiar na natureza, além de apreciar lindas paisagens naturais.">
-    <meta name="author" content="Ivan Rodrigues Silva junior.">
-    <title>Sobre Nós - Rafting Adventure</title>
+      content="Conheça a história, a missão e a equipe da Rafting Adventure, uma empresa dedicada a experiências de rafting e aventuras ao ar livre.">
+    <meta name="author" content="Ivan Rodrigues Silva Junior">
+    <title>Sobre Nós | Rafting Adventure</title>
     <link rel="stylesheet" href="estilos/rafting.css">
 </head>
 
 <body>
     <header>
-        <img src="imagens/logo.webp" alt="Logotipo da Rafting Adventure">
-        <nav>
+        <a class="logo" href="index.html">
+            <img src="imagens/logo.webp" alt="Logotipo da Rafting Adventure">
+        </a>
+
+        <nav aria-label="Navegação principal">
             <a href="index.html">Página Inicial</a>
-            <a href="sobre.html">Sobre Nós</a>
+            <a href="sobre.html" aria-current="page">Sobre Nós</a>
             <a href="passeios.html">Passeios</a>
             <a href="contato.html">Fale Conosco</a>
         </nav>
     </header>
-    <main>
-        <div class="hero">
-            <img src="imagens/hero-image.webp"
-              alt="Grupo praticando rafting nas corredeiras de um rio">
-            <h1>Rafting Adventure</h1>
-            <article>
-                <img src="imagens/funcionario-feliz.webp" alt="funcionário feliz no trabalho">
-                <p>Somos uma empresa americana apaixonada por rafting e aventuras ao ar livre. Nossa
-                    missão é
-                    proporcionar experiências emocionantes, seguras e inesquecíveis em meio à
-                    natureza. Contamos com
-                    guias experientes, equipamentos de qualidade e muito entusiasmo para transformar
-                    cada descida em uma
-                    aventura especial para nossos clientes e suas famílias.
-                </p>
-            </article>
-        </div>
 
-        <section class="historia">
-            <h2>História</h2>
-            <p>Fundada nas montanhas americanas, a empresa nasceu da paixão por aventura, rios e
-                natureza. Desde o
-                início, seu objetivo foi proporcionar experiências emocionantes, seguras e
-                inesquecíveis para seus
-                clientes sempre.</p>
-            <img src="imagens/historia.jpg" alt="Remos coloridos na imagem">
-            <p>Com guias experientes e equipamentos modernos, a equipe conduz grupos por diferentes
-                trechos dos
-                rios, valorizando segurança, diversão e respeito ao meio ambiente em cada aventura
-                compartilhada com
-                responsabilidade sempre.</p>
+    <main>
+        <section class="hero" aria-labelledby="titulo-principal">
+            <img class="hero-imagem" src="imagens/hero-image.webp"
+              alt="Grupo praticando rafting nas corredeiras de um rio">
+
+            <h1 id="titulo-principal">Conheça a Rafting Adventure</h1>
+
+            <article class="hero-cartao">
+                <img src="imagens/funcionario-feliz.webp"
+                  alt="Integrante da equipe da Rafting Adventure">
+
+                <div class="hero-conteudo">
+                    <p>
+                        Somos uma empresa americana apaixonada por rafting e
+                        aventuras ao ar livre. Nossa missão é proporcionar
+                        experiências emocionantes, seguras e inesquecíveis em
+                        meio à natureza. Contamos com guias experientes,
+                        equipamentos adequados e muito entusiasmo para transformar
+                        cada descida em uma aventura especial para nossos clientes
+                        e suas famílias.
+                    </p>
+
+                    <a class="botao-link" href="passeios.html">
+                        Descubra nossos passeios
+                    </a>
+                </div>
+            </article>
         </section>
-        <section class="aventura">
-            <h2>A aventura está te esperando!</h2>
-            <figure><img src="imagens/passeio-1.jpg" alt="Passeio 1">
+
+        <section class="historia" aria-labelledby="titulo-historia">
+            <h2 id="titulo-historia">Nossa história</h2>
+
+            <p>
+                Fundada nas montanhas americanas, a Rafting Adventure nasceu
+                da paixão por aventura, rios e natureza. Desde o início, nosso
+                objetivo é proporcionar experiências emocionantes, seguras e
+                inesquecíveis para nossos clientes.
+            </p>
+
+            <img src="imagens/historia.jpg"
+              alt="Remos coloridos utilizados nas aventuras de rafting">
+
+            <p>
+                Com guias experientes e equipamentos adequados, nossa equipe
+                conduz grupos por diferentes trechos dos rios, valorizando a
+                segurança, a diversão e o respeito ao meio ambiente em cada
+                aventura.
+            </p>
+        </section>
+
+        <section class="aventura" aria-labelledby="titulo-aventura">
+            <h2 id="titulo-aventura">A aventura está esperando por você!</h2>
+
+            <figure>
+                <img src="imagens/passeio-1.jpg" alt="Passeio de rafting no Cânion Köprülü">
                 <figcaption>Cânion Köprülü</figcaption>
             </figure>
-            <figure><img src="imagens/passeio-2.jpg" alt="Passeio 2">
-                <figcaption>corredeiras de Akol</figcaption>
+
+            <figure>
+                <img src="imagens/passeio-2.jpg" alt="Aventura de rafting nas corredeiras de Akol">
+                <figcaption>Corredeiras de Akol</figcaption>
             </figure>
-            <figure><img src="imagens/passeio-3.jpg" alt="Passeio 3">
-                <figcaption>monte Ululo</figcaption>
+
+            <figure>
+                <img src="imagens/passeio-3.jpg"
+                  alt="Paisagem de montanha durante uma aventura de rafting">
+                <figcaption>Monte Ululo</figcaption>
             </figure>
-            <figure><img src="imagens/passeio-4.jpg" alt="Passeio 4">
-                <figcaption>águas de SP</figcaption>
+
+            <figure>
+                <img src="imagens/passeio-4.jpg" alt="Passeio de rafting em águas brasileiras">
+                <figcaption>Águas de SP</figcaption>
             </figure>
-            <figure><img src="imagens/passeio-5.jpg" alt="Passeio 5">
-                <figcaption>descida de Kruk</figcaption>
+
+            <figure>
+                <img src="imagens/passeio-5.jpg"
+                  alt="Grupo descendo um trecho de rio durante o passeio">
+                <figcaption>Descida de Kruk</figcaption>
             </figure>
         </section>
     </main>
-    <footer>
-        <p>©️ 2026 - Rafting Adventure - Ivan Rodrigues Silva Junior</p>
-        <nav class="redes-sociais">
-            <a href="https://www.facebook.com/ivodrigues/"><img src="imagens/icone-facebook.svg"
-                  alt="ícone facebook"></a>
-            <a href="https://www.instagram.com/ivanjunior.048/"><img
-                  src="imagens/icone-instagram.svg" alt="ícone instagram"></a>
-            <a href="www.linkedin.com/in/ivan-rodrigues-silva-junior"><img
-                  src="imagens/icone-linkedin.svg" alt="ícone linkedin"></a>
 
+    <footer>
+        <p>© 2026 - Rafting Adventure - Ivan Rodrigues Silva Junior</p>
+
+        <nav class="redes-sociais" aria-label="Redes sociais">
+            <a href="https://www.facebook.com/ivodrigues/" aria-label="Facebook">
+                <img src="imagens/icone-facebook.svg" alt="">
+            </a>
+
+            <a href="https://www.instagram.com/ivanjunior.048/" aria-label="Instagram">
+                <img src="imagens/icone-instagram.svg" alt="">
+            </a>
+
+            <a href="https://www.linkedin.com/in/ivan-rodrigues-silva-junior" aria-label="LinkedIn">
+                <img src="imagens/icone-linkedin.svg" alt="">
+            </a>
         </nav>
     </footer>
 </body>
